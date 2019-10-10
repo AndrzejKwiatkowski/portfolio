@@ -74,8 +74,11 @@ main {
     grid-gap: 30px;
     grid-template-areas: 
     'bioimage bio bio'
-    'job1 job2 job3';
+    'info info info'
+    'all all all';
     grid-template-columns: repeat(3, 1fr);
+    
+    
 
     .bio-image {
         grid-area: bioimage;
@@ -87,21 +90,32 @@ main {
         grid-area: bio;
         font-size: 1.5rem;
     }
-    .job-1 {
-        grid-area: job1;
+    .info {
+        grid-area: info;
+        justify-self: center;
     }
-    .job-2 {
-        grid-area: job2;
-    }
-    .job-3 {
-        grid-area: job3;
-    }
-    .job {
-        background: lighten($primary-color, 5);
-        padding: 0.5rem;
-        border-bottom: $secondary-color 5px solid;
-    }
+    .all {
+        grid-area: all;
+        justify-self: center;
+        .skill {
+            display: inline-block;
+           
+        }
+        .skill-txt {
+            text-align: center;
+        }
+        img{
+            height: 100px;
+            width: 100px;
+        }
+       
+        }
+        
+    
+   
+   
 }
+
 
 //Project
 
@@ -137,7 +151,7 @@ main {
         @include easeOut;
 
         &:hover {
-            padding: 0.5rem 1.5rem;
+            padding: 1.0rem 2.0rem;
             background: $secondary-color;
             color: set-text-color($secondary-color);
             span {
@@ -177,6 +191,7 @@ main {
     background: darken($primary-color, 10);
     color: set-test-color($primary-color);
     height: 60px;
+   
 
 }
 @import 'mobile';
