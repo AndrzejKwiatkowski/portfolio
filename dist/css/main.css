@@ -179,6 +179,7 @@ main {
       width: 100px; }
 
 .projects {
+  margin-top: 1rem;
   display: grid;
   grid-gap: 0.7rem;
   grid-template-columns: repeat(3, 1fr); }
@@ -268,7 +269,7 @@ main {
       width: 150px;
       height: 150px; }
   .about-info {
-    grid-template-areas: 'bioimage' 'bio' 'all' 'all' 'all';
+    grid-template-areas: 'bioimage' 'bio' 'info' 'all' 'all' 'all';
     grid-template-columns: 1fr; }
   .projects {
     grid-template-columns: repeat(2, 1fr); } }
